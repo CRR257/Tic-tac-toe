@@ -1,11 +1,11 @@
 # Tic Tac Toe 
 
-App Tic Tac Toe Game
+User can play Tic tac toe and go back to previous movemens
 
 ## Technology
 
-
-tic-tac-toe => React && Js
-tic-tac-toe-ts => React && Ts
+tic-tac-toe => React Hooks && Js
+<br/>
+tic-tac-toe-ts => React Hooks && Ts
 
 ![tictactoe](./img/img.png)

@@ -1,0 +1,34 @@
+.game {
+    display: flex;
+    position: relative;
+    top: 3rem;
+    background-color: #605e5e;
+    padding: 4rem 5rem;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-bottom: 6rem;
+}
+
+.game-players {
+    margin: 0 auto;
+    width: fit-content;
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.game-info {
+    margin-left: 20px;
+    position: relative;
+    bottom: 2rem;
+  }
+  
+button {
+    padding: 6px 8px;
+    margin: 5px;
+    border-radius: 2px;
+    border: 1px solid grey;
+    background-color: #bcbcbc;
+    cursor: pointer;
+}

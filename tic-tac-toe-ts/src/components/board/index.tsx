@@ -8,7 +8,6 @@ interface BorderProps {
 };
 
 const Board: React.FC<BorderProps> = (props: BorderProps) => {
-
     function renderSquare(i: number) {
         return (
             <Square

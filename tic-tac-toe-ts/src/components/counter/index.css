@@ -1,0 +1,36 @@
+.count {
+    flex-direction: unset;
+}
+
+.counter {
+    padding: 10px 14px;
+    background-color: #696666;
+    margin: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.result {
+    background-color: gray;
+    width: fit-content;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.button {
+    margin: unset !important;
+    position: relative;
+    left: 10px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+  }
+
+input {
+    margin-top: unset !important;
+}

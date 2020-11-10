@@ -3,6 +3,8 @@ body {
   margin: 20px;
   letter-spacing: 1.2px;
   background-color: #a7a7a7;
+  margin: unset;
+  font-weight: 600;
 }
 
 ol, ul {
@@ -42,29 +44,30 @@ ol, ul {
   background: #ddd;
 }
 
-.game {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
-  top: 5rem;
-}
-
-.game-info {
-  margin-left: 20px;
-  position: relative;
-  bottom: 2rem;
-}
-
-button {
-  padding: 5px;
-  margin: 5px;
-  border-radius: 2px;
-  border: 1px solid grey;
-}
-
 .title {
   font-weight: 700;
   font-size: 20px;
   text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid #868484;
+  margin-top: 10px;
+  width: 250px;
+  text-indent: 5px;
+  letter-spacing: 1.1px;
+  font-size: 15px;
 }

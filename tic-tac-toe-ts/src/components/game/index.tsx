@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { AppState } from '../../redux/reducers/rootReducer';
 import Board from '../board';
-
+import './index.css';
 
 interface Step {
     squares: Array<string>;
@@ -11,25 +13,31 @@ const Game = () => {
     const [stepNumber, setStepNumber] = useState<number>(0);
     const [xIsNext, setXIsNext] = useState<boolean>(true);
     const [status, setStatus] = useState<string>('');
+    const [players, setPlayers] = useState(false);
     let current = history[stepNumber];
+    const { name1 } = useSelector((state: AppState) => state.name);
+    const { name2 } = useSelector((state: AppState) => state.name);
 
-   // type handleClick = (i: number) => void;
-
-   useEffect(() => {
+    useEffect(() => {
         current = history[stepNumber];
         let winner = calculateWinner(current.squares);
 
         if (winner) {
             setStatus('Winner: ' + winner);
         } else {
-            setStatus('Next player: ' + (xIsNext ? 'X' : 'O'));
+            // setStatus('Next player: ' + (xIsNext ? 'X' : 'O'));
+            setStatus('Next player: ' + (xIsNext ? `${name1}` : `${name2}`));
+        }
+
+        if (name1 && name2 !== '') {
+            setPlayers(true);
         }
     });
 
     const calculateWinner = (squares: Array<string>) => {
         // winning combinations moves on board
         const lines = [
-            [0, 1, 2], 
+            [0, 1, 2],
             [3, 4, 5],
             [6, 7, 8],
             [0, 3, 6],
@@ -69,7 +77,7 @@ const Game = () => {
     const moves = history.map((__, move: number) => {
         let desc: string = move ? 'Go to move => ' + move : 'Go to game start';
         return (
-            <li key = {move}>
+            <li key={move}>
                 <button onClick={() => jumpTo(move)}>
                     {desc}
                 </button>
@@ -80,11 +88,14 @@ const Game = () => {
     return (
         <div>
             <p className="title">Tic tac toe</p>
+            {players ? <div className="game-players">
+                <p>X player: {name1}</p>
+                <p>O player: {name2}</p>
+                </div> : null}
             <div className="game">
                 <div className="game-board">
                     <Board
                         squares={current.squares}
-                        // onClick={(i) => handleClick(i)}
                         onClick={(i) => handleClick(i)}
                     />
                 </div>

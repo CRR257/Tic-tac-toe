@@ -8,6 +8,7 @@ const Navigation = () => {
             <NavLink to="/" activeStyle={{ color: '#f4f4f4', textDecoration: 'underline' }} className="nav-link" exact={true}>Home</NavLink>
             <NavLink to="/game" activeStyle={{ color: '#f4f4f4', textDecoration: 'underline' }} className="nav-link" exact={true}>Tic tac toe</NavLink>
             <NavLink to="/counter" activeStyle={{ color: '#f4f4f4', textDecoration: 'underline' }} className="nav-link" exact={true}>Counter</NavLink>
+            <NavLink to="/tasks" activeStyle={{ color: '#f4f4f4', textDecoration: 'underline' }} className="nav-link" exact={true}>Tasks</NavLink>
         </div>
     )
 

@@ -5,7 +5,7 @@ import { CountActions } from '../../redux/actions/countActions';
 import ResetButton from '../reset-button';
 import './index.css';
 
-const Counter = () => {
+const Calculator = () => {
     const { count } = useSelector((state: AppState) => state.count);
     const countDispatch = useDispatch<Dispatch<CountActions>>();
     const [inputCalculator, setInputCalculator] = useState(0);
@@ -36,7 +36,7 @@ const Counter = () => {
 
     return (
         <div>
-            <p className="title">Counter</p>
+            <p className="title">Calculator</p>
             <div className="container count result">
                 Start value = {count}
             </div>
@@ -59,4 +59,4 @@ const Counter = () => {
     )
 }
 
-export default Counter;
+export default Calculator;

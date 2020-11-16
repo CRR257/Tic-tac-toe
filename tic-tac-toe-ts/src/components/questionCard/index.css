@@ -1,0 +1,9 @@
+.question-card {
+    width: 70%;
+}
+
+.btn-answers {
+    min-width: 146px;
+    padding: 8px 10px;
+    background-color: #f4f4f4;
+}

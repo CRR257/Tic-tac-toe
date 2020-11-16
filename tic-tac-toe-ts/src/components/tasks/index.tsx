@@ -40,6 +40,7 @@ const Tasks = () => {
 
     return (
         <div>
+            <p className="title">Tasks</p>
             <div className="container formsubmit">
                 <form onSubmit={handleSubmit}>
                     <input type="text" onChange={e => setNewTask(e.target.value)} value={newTask} autoFocus ref={taskInput}/>

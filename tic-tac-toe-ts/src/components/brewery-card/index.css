@@ -1,0 +1,38 @@
+.breweries-card {
+    padding: 1rem;
+    border: 1px solid grey;
+    background-color: #686767;
+    margin: 1rem;
+    cursor: pointer;
+    width: 16rem;
+    display: flex;
+    border-radius: 3px;
+    flex-direction: column;
+}
+.breweries-card__selected {
+    padding: 2rem 4rem;
+    border: 1px solid grey;
+    background-color: #686767;
+    margin: 1rem;
+    cursor: pointer;
+    height: 14rem;
+    border-radius: 3px;
+    flex-direction: column;
+}
+.breweries-card__title {
+    color: #d5d5d5;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+.breweries-card__information {
+    font-size: 12px;
+    max-width: fit-content;
+    display: flex;
+    letter-spacing: 0.9px;
+    color: #1d1d1d;
+}
+
+.goBack {
+    position: relative;
+    top: 2rem;
+}

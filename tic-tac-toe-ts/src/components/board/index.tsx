@@ -38,5 +38,4 @@ const Board: React.FC<BorderProps> = (props: BorderProps) => {
     );
 }
 
-
 export default Board;

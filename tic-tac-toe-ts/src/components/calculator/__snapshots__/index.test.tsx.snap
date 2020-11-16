@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator should contains a resetButton 1`] = `<div />`;
+
+exports[`Calculator should render component 1`] = `
+<div>
+  <p
+    className="title"
+  >
+    Calculator
+  </p>
+  <div
+    className="container count result"
+  >
+    Start value = 
+    0
+  </div>
+  <div
+    className="container count"
+  >
+    <button
+      className="counter"
+      disabled={true}
+      onClick={[Function]}
+    >
+       + 
+    </button>
+    <button
+      className="counter"
+      disabled={true}
+      onClick={[Function]}
+    >
+       - 
+    </button>
+    <button
+      className="counter"
+      disabled={true}
+      onClick={[Function]}
+    >
+       * 
+    </button>
+    <button
+      className="counter"
+      disabled={true}
+      onClick={[Function]}
+    >
+       / 
+    </button>
+  </div>
+  <div
+    className="container count"
+  >
+    <button
+      className="counter"
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Insert a number"
+        type="number"
+        value=""
+      />
+    </button>
+  </div>
+  <div
+    className="container"
+  >
+    <p
+      className="count result"
+    >
+      Result = 
+      0
+    </p>
+    <div>
+      <button
+        className="result button"
+        onClick={[Function]}
+      >
+        Reset
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Calculator should render title 1`] = `
+<p>
+  Calculator
+</p>
+`;

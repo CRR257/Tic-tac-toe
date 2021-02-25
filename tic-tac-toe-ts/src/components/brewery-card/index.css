@@ -1,7 +1,7 @@
 .breweries-card {
     padding: 1rem;
     border: 1px solid grey;
-    background-color: #686767;
+    background-color: #686767bf;
     margin: 1rem;
     cursor: pointer;
     width: 16rem;
@@ -10,14 +10,16 @@
     flex-direction: column;
 }
 .breweries-card__selected {
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     border: 1px solid grey;
-    background-color: #686767;
+    background-color: #686767bf;
     margin: 1rem;
-    cursor: pointer;
-    height: 14rem;
+    height: 8rem;
     border-radius: 3px;
     flex-direction: column;
+    display: flex;
+    position: relative;
+    top: 2rem;
 }
 .breweries-card__title {
     color: #d5d5d5;
@@ -31,8 +33,9 @@
     letter-spacing: 0.9px;
     color: #1d1d1d;
 }
-
 .goBack {
     position: relative;
     top: 2rem;
+    cursor: pointer;
+    width: 10rem;
 }

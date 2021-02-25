@@ -19,7 +19,6 @@ const Routes = () => (
       <Route exact path="/tasks" component={Tasks} />
       <Route exact path="/quizz" component={Question} />
       <Route exact path="/breweries" component={Brewery} />
-      {/* <Route exact path="/:id/details" component={Brewery} /> minut 8*/}
       <Route exact path="/404" component={NotFound} />
       <Redirect to="/404" />
     </Switch>

@@ -6,3 +6,12 @@
     margin: 0 auto;
     padding: 1rem 2rem;
 }
+.error {
+    position: relative;
+    top: 5rem;
+    width: 13rem;
+    padding: 2rem 3rem;
+    background-color: #ff12126e;
+    border-radius: 4px;
+    display: flex;
+}

@@ -91,7 +91,7 @@ const Game = () => {
             {players ? <div className="game-players">
                 <p>X player: {name1}</p>
                 <p>O player: {name2}</p>
-                </div> : null}
+            </div> : null}
             <div className="game">
                 <div className="game-board">
                     <Board

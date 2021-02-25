@@ -11,6 +11,7 @@ const Navigation = () => {
             <NavLink to="/tasks" activeStyle={{ color: '#f4f4f4', textDecoration: 'underline' }} className="nav-link" exact={true}>Tasks</NavLink>
             <NavLink to="/quizz" activeStyle={{ color: '#f4f4f4', textDecoration: 'underline' }} className="nav-link" exact={true}>Quizz</NavLink>
             <NavLink to="/breweries" activeStyle={{ color: '#f4f4f4', textDecoration: 'underline' }} className="nav-link" exact={true}>Breweries</NavLink>
+            <NavLink to="/sankey" activeStyle={{ color: '#f4f4f4', textDecoration: 'underline' }} className="nav-link" exact={true}>Sankey</NavLink>
         </div>
     )
 
